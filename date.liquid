@@ -1,0 +1,7 @@
+<!--     86400 1 days -->
+    {{ 3 | times: 86400 }}
+    {{ "now" | date: "%a, %b %d" }} or
+    {% assign days = 3 | times: 86400 %}
+    {{ "now" | date: "%s" | plus: days | date: "%a, %b %d" }}
+    
+    https://stackoverflow.com/questions/39730058/adding-days-to-a-date-excluding-weekends-in-shopify
